@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mindset Matrix - Ana AI Guide</title>
+    
+    <style>
+        body {
+            padding-bottom: 200px;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Thoda halka background */
+        }
+        h1 {
+            color: #5d35b1; /* Ana ke color se milta julta */
+        }
+        #ana-container {
+            position: fixed; /* Ana hamesha screen par fix rahegi */
+            bottom: 20px; /* Neeche se 20 pixel upar */
+            right: 20px; /* Daayein se 20 pixel andar */
+            width: 150px; /* Ana ka size */
+            height: auto;
+            cursor: pointer; /* Mouse Ana par aane par hath ka nishan aaye */
+            transition: transform 0.3s;
+            z-index: 1000; 
+        }
+        #ana-img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to The Mindset Matrix!</h1>
+    <p>We are creating a stronger mindset for you with Ana's help.</p>
+    <div style="height: 1000px; background-color: white; padding: 20px;">
+        <h2>Scroll down to see Ana stay fixed!</h2>
+        </div>
+
+    <div id="ana-container">
+        <img id="ana-img" src="ana_normal.png" alt="Ana The Mindset AI Guide">
+    </div>
+
+    <script>
+        const anaContainer = document.getElementById('ana-container');
+        // Zaroor dekhein ke aapne 'ana_welcome.mp3' naam ki file upload ki hai
+        const welcomeAudio = new Audio('ana_welcome.mp3'); 
+
+        // Website load hote hi Ana ko bolwana
+        window.onload = function() {
+            // Cute Zoom effect
+            anaContainer.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                anaContainer.style.transform = 'scale(1)';
+            }, 300);
+
+            // Welcome audio chalana
+            welcomeAudio.play();
+        }
+
+        // Click karne par test
+        anaContainer.addEventListener('click', function() {
+            alert('Hello! Ana heard you click!'); 
+        });
+    </script>
+</body>
+</html>
+Final Commit: Code paste karne ke baad, page ke neeche "Commit new file" par click karein.
